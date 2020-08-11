@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Clock Out Tool</title>
+  <link rel="stylesheet" href="assets/css/clockout.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="assets/js/clockout.js"></script>
+  <script src="assets/js/moment.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <form @submit.prevent="submit" type="form" autocomplete="off">
+      <div class="row align-items-center">
+        Expected Hours: <input type="text" id="expectedHrs"></input>
+        <button class="btn" type="button" id="forty">40</button>
+        <button class="btn" type="button" id="eight">8</input>
+      </div>
+      <div class="row align-items-center">
+        Current Hours: <input type="text" id="currentHrs"></input>
+      </div>
+      <div class="row align-items-center">
+        Clock In Time: <input type="time" id="timeIn"></input>
+        <button class="btn" type="button" id="now">Now</button>
+      </div>
+      <div class="row align-items-center">
+        <button class="btn" type="submit" id="submitBtn">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
